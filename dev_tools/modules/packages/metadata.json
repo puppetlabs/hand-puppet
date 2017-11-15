@@ -1,0 +1,15 @@
+{
+  "name": "newstart_packages",
+  "version": "0.1.0",
+  "author": "Seamus McKenna, Andy Hayes",
+  "summary": "For managing system packages",
+  "license": "Apache-2.0",
+  "source": "https://github.com/puppetlabs/hand-puppet",
+  "project_page": "https://github.com/puppetlabs/hand-puppet",
+  "issues_url": "https://github.com/puppetlabs/hand-puppet/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+

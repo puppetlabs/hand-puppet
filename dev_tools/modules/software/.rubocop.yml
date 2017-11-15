@@ -1,0 +1,48 @@
+# RuboCop config file
+# Configure cops
+# https://github.com/bbatsov/rubocop
+# https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+# https://github.com/bbatsov/ruby-style-guide
+#
+
+AllCops:
+  Include:
+    - '**/*.gemspec'
+    - '**/*.rake'
+    - '**/Gemfile'
+    - '**/Puppetfile'
+    - '**/Rakefile'
+    - '**/Guardfile'
+  Exclude:
+    - 'modules/**/*'
+    - 'pkg/**/*'
+    - 'spec/fixtures/**/*'
+    - 'vendor/**/*'
+  DisplayCopNames: true
+
+Metrics/MethodLength:
+  # Ruduce this... Max: 10
+  Max: 28
+
+Metrics/LineLength:
+  # Ruduce this... Max: 80
+  Max: 111
+
+Metrics/AbcSize:
+  # Ruduce this... Max: 15
+  Max: 30
+
+Metrics/CyclomaticComplexity:
+  # Ruduce this... Max: 6
+  Max: 8
+
+# Cop supports --auto-correct.
+# Configuration parameters: SupportedStyles.
+# Support ruby 1.8.7
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+
+# The shebang stuff at the top triggers this
+Style/LeadingCommentSpace:
+  Exclude:
+    - Puppetfile
