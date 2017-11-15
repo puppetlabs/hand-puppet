@@ -1,0 +1,44 @@
+{
+  "name": "edestecd-software",
+  "version": "1.1.0",
+  "author": "Chris Edester",
+  "summary": "Puppet Module to install various Desktop Software",
+  "license": "GPL-3.0+",
+  "source": "https://github.com/edestecd/puppet-software.git",
+  "project_page": "https://github.com/edestecd/puppet-software",
+  "issues_url": "https://github.com/edestecd/puppet-software/issues",
+  "tags": ["desktop", "software", "graphical", "gui", "browser", "chrome", "firefox", "editors", "atom", "textmate"],
+  "description": "The software module provides classes to install many commonly needed Desktop Applications",
+  "dependencies": [
+    {"name": "puppetlabs/stdlib", "version_requirement": ">= 4.2.0 < 5.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemrelease": ["12.x", "13.x", "14.x", "15.x"]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": ["12.04", "14.04", "16.04"]
+    },
+    {
+      "operatingsystem": "Windows",
+      "operatingsystemrelease": [
+        "Server 2003", "Server 2003 R2",
+        "Server 2008", "Server 2008 R2",
+        "Server 2012", "Server 2012 R2",
+        "7", "8", "10"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ]
+}
